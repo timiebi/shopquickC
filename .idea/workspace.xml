@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5090f510-1f16-402a-a24c-ab3b0d406c16" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assets/svg.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/assets/svg.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/about/meetTheTeam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/about/meetTheTeam.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/about/missionVision.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/about/missionVision.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/joinMovement.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/joinMovement.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/oursolutions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/oursolutions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/theProblem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/theProblem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/tryTheApp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/tryTheApp.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "timiebi"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Shopquick-dev/landing-page.git",
+    "accountId": "a0ad7824-b29e-4a3a-9e56-71bb9b13098a"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2yEInHftmVZrsrW3KbrCK3dhKQI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5090f510-1f16-402a-a24c-ab3b0d406c16" name="Changes" comment="" />
+      <created>1749393470755</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749393470755</updated>
+      <workItem from="1749393472021" duration="41169000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
