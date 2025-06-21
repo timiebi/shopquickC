@@ -19,8 +19,8 @@ export function HeaderComponent() {
 
   const navLinks = [
     { name: "About Us", href: "/about" },
-    { name: "FAQs", href: "/" },
-    { name: "Contact", href: "/" },
+    { name: "FAQs", href: "/#" },
+    { name: "Contact", href: "/#" },
   ];
 
   const baseClasses = "cursor-pointer py-3 px-3 text-left w-fit";

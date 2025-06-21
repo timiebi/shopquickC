@@ -3,7 +3,7 @@ import { AndroidSvg, IosSvg } from "@/app/assets/svg";
 export function TryTheApp() {
     return (
         <main style={{fontFamily: "Montserrat, sans-serif"}}>
-            <div className="max-w-[495px] m-auto mt-[4rem]">
+            <div className="max-w-[495px] m-auto mt-[4rem] mb-5">
                 <div
                     className="bg-[#BBDFFF] max-w-[371px] rounded-[16px] flex items-center p-[4px] justify-between m-auto">
                     <div
