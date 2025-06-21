@@ -2,10 +2,10 @@ export function VisionMission() {
     return (
         <div style={{fontFamily: "Montserrat, sans-serif"}}>
             <div className="bg-[#E4E4E4] py-[2rem] mb-[4rem]">
-                <div className="max-w-[1200px] m-auto">
+                <div className="max-w-[348px] md:max-w-[1200px] m-auto">
                     <div className="mb-7">
-                        <h1 className="text-[#08569C] text-[49.69px] font-[800] text-center mb-6">OUR MISSION</h1>
-                        <p className="text-[28.65px] font-[400] text-[#525252] text-center">
+                        <h1 className="text-[#08569C] text-[35px] md:text-[49.69px] font-[800] text-center mb-6">OUR MISSION</h1>
+                        <p className="text-[18px] md:text-[28.65px] font-[400] text-[#525252] text-center">
                             To empower consumers with innovative, AI-driven, and data-powered grocery shopping
                             solutions—ensuring they never overpay, never miss out on a great deal, and always shop with
                             confidence and convenience. We are dedicated to saving time, hard-earned money, and reducing
@@ -16,8 +16,8 @@ export function VisionMission() {
                         </p>
                     </div>
                     <div>
-                        <h1 className="text-[#08569C] text-[49.69px] font-[800] text-center mb-6">OUR VISION</h1>
-                        <p className="text-[28.65px] font-[400] text-[#525252] text-center">
+                        <h1 className="text-[#08569C] text-[35px] md:text-[49.69px] font-[800] text-center mb-6">OUR VISION</h1>
+                        <p className="text-[18px] md:text-[28.65px] font-[400] text-[#525252] text-center">
                             To create a future where grocery shopping is fully optimized through advanced AI, real-time
                             pricing updates, and seamless smart integrations. We aim to enable everyone to make
                             cost-effective, convenient, and sustainable shopping decisions effortlessly. By harnessing

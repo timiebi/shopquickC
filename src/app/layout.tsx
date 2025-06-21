@@ -1,11 +1,10 @@
-import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
-import "./globals.css";
-import {HeaderComponent} from "@/modules/header";
+import { Footer } from "@/modules/footer";
+import { HeaderComponent } from "@/modules/header";
+import { JoinWaitlist } from "@/modules/joinMovement";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import Head from "next/head";
-import {JoinWaitlist} from "@/modules/joinMovement";
-import {Footer} from "@/modules/footer";
-import { Montserrat } from 'next/font/google';
+import "./globals.css";
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -51,7 +50,7 @@ export default function RootLayout({
         </Head>
 
         <body
-            className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
+            className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased `}
         >
         <HeaderComponent/>
         {children}

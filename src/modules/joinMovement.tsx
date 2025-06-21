@@ -1,34 +1,51 @@
-import {EnvelopeSvg} from "@/app/assets/svg";
+import { EnvelopeSvg } from "@/app/assets/svg";
 
 export function JoinWaitlist() {
-    return (
-        <main className="bg-[#08569C]  text-[white] py-[4.5rem]" style={{fontFamily: "Montserrat, sans-serif"}}>
-            <div className="max-w-[1200px] m-auto flex items-center justify-between w-full">
-                <div>
-                    <h3 className="text-[25px] font-[400]">
-                        Enjoy a complimentary voucher on your first order with us!
-                    </h3>
-                    <h2 className="font-[700] text-[49.5px] mb-[2rem]">
-                        Join the Movement
-                    </h2>
-                    <h3 className="max-w-[650px] text-[25px] font-[400] mb-[2.4rem]">
-                        Join our email subscription now to get updates on promotions and coupons.
-                    </h3>
-                    <div
-                        className="h-[95.52195739746094] bg-[white] py-[17px] px-[13px] flex items-center justify-between max-w-[773px] rounded-[10px]">
-                        <EnvelopeSvg/>
+   return (
+      <main
+         className="bg-[#08569C]  text-[white] py-[4.5rem]"
+         style={{ fontFamily: "Montserrat, sans-serif" }}
+      >
+         <div className="max-w-[1200px] m-auto flex flex-col md:flex-row items-center justify-between w-full">
+            <div>
+               <h3 className="md:text-[25px] text-[18px] font-[400] max-w-[258px] md:max-w-full md:text-left text-center m-auto">
+                  Enjoy a complimentary voucher on your first order with us!
+               </h3>
+               <h2 className="font-[700] text-[45px] md:max-w-full max-w-[348px] md:text-left text-center m-auto md:text-[49.5px] mb-[2rem]">
+                  Join the Movement
+               </h2>
+               <h3 className="md:max-w-[650px] text-[18px] max-w-[348px] md:text-left text-center mx-auto md:mx-0 md:text-[25px] font-[400] mb-[2.4rem]">
+                  Join our email subscription now to get updates on promotions and coupons.
+               </h3>
+               <div className="hidden h-[95.52195739746094] bg-[white] py-[17px] px-[13px] md:flex md:flex-row flex-col items-center justify-between max-w-[773px] rounded-[10px]">
+                  <EnvelopeSvg />
 
-                        <input placeholder="Your Email Address" className="text-[#949494AB] text-[25px] h-[30px] ml-3"/>
-                        <button
-                            className="bg-[#08569C] text-[white] text-[22.65px] font-[600] rounded-[11.9px] cursor-pointer outline-none py-[16.76px] px-[20px]">
-                            SIGN UP FOR EARLY ACCESS
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <img src="/assets/joinus.png" alt="join us"/>
-                </div>
+                  <input
+                     placeholder="Your Email Address"
+                     className="text-[#949494AB] text-[25px] h-[30px] ml-3"
+                  />
+                  <button className="bg-[#08569C] text-[white] text-[22.65px] font-[600] rounded-[11.9px] cursor-pointer outline-none py-[16.76px] px-[20px]">
+                     SIGN UP FOR EARLY ACCESS
+                  </button>
+               </div>
+               <div className="md:hidden bg-[white] py-[17px] px-[13px] flex md:flex-row flex-col items-center justify-between max-w-[348px] m-auto rounded-[10px]">
+                  <div className="flex items-center gap-3 mb-3 border-2 border-[#E1E1E1] rounded-[6px] p-[12px]">
+                     <EnvelopeSvg />
+
+                     <input
+                        placeholder="Your Email Address"
+                        className="text-[#949494AB] text-[18px] h-[30px] ml-3"
+                     />
+                  </div>
+                  <button className="bg-[#08569C] text-[white] text-[18px] font-[600] rounded-[11.9px] cursor-pointer outline-none py-[16.76px] px-[20px]">
+                     SIGN UP FOR EARLY ACCESS
+                  </button>
+               </div>
             </div>
-        </main>
-    )
+            <div>
+               <img src="/assets/joinus.png" alt="join us" />
+            </div>
+         </div>
+      </main>
+   );
 }

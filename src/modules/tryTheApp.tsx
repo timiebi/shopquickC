@@ -1,4 +1,4 @@
-import {AndroidSvg, IosSvg} from "@/app/assets/svg";
+import { AndroidSvg, IosSvg } from "@/app/assets/svg";
 
 export function TryTheApp() {
     return (
@@ -18,9 +18,9 @@ export function TryTheApp() {
                     </div>
                 </div>
                 <div className="m-auto max-w-[226px]">
-                    <h2 className="text-[#08569C] text-[36.93px] font-[800] text-center mt-4">Try the app</h2>
+                    <h2 className="text-[#08569C] text-[35px] md:text-[36.93px] font-[800] text-center mt-4">Try the app</h2>
                 </div>
-                <p className="text-[24.54px] font-[400] text-[#525252] text-center max-w-[495px] leading-[32px] mt-4">
+                <p className="text-[18px]  md:text-[24.54px] font-[400] text-[#525252] text-center max-w-[348px] m-auto md:max-w-[495px] leading-[32px] mt-4">
                     Save Big, Enjoy More: Experience the Next Generation of Grocery Shopping with Intelligent Price
                     Comparison.
                 </p>
