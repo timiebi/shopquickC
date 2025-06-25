@@ -1,11 +1,23 @@
+"use client";
+
+
 import { Carousel } from "@/modules/carousel";
+import { WaitlistModalComponent } from "@/modules/modal/waitlistModal";
 import { OurSolid } from "@/modules/oursolutions";
 import { TheProblem } from "@/modules/theProblem";
 import { TryTheApp } from "@/modules/tryTheApp";
+import { useState } from "react";
 
 export default function Home() {
+    const [formOpen, setFormOpen] = useState(false);
    return (
       <div>
+          <WaitlistModalComponent
+
+               isOpen={formOpen}
+               onClose={() => setFormOpen(false)}
+               setFormOpen={setFormOpen}
+            />
          <div className="bg-[url('/assets/herobg.png')] bg-cover bg-center md:h-[669px] md:w-auto w-full">
             <div className="max-w-[1200px] m-auto pt-[9rem] md:pt-[4rem]">
                <div className="flex md:flex-row flex-col items-center justify-center md:justify-between gap-[2rem]">
@@ -18,7 +30,7 @@ export default function Home() {
                         comparisons, Ai powered personalized deals and seamless checkout across
                         multiple supermarkets
                      </p>
-                     <button className="hidden md:block bg-[#08569C] text-[white] text-[22.65px] font-[600] rounded-[11.9px] py-[16.76px] px-[20px]">
+                     <button  onClick={() => setFormOpen(true)} className="cursor-pointer hidden md:block bg-[#08569C] text-[white] text-[22.65px] font-[600] rounded-[11.9px] py-[16.76px] px-[20px]">
                         SIGN UP FOR EARLY ACCESS
                      </button>
                   </div>
@@ -27,7 +39,7 @@ export default function Home() {
                      alt="shopQuickHero"
                      className="m-auto max-w-[348px] md:max-w-auto"
                   />
-                  <button className="md:hidden bg-[#08569C] text-[white] text-[1rem] font-[600] rounded-[11.9px] py-[16px] px-[20px] mb-[3rem]">
+                  <button  onClick={() => setFormOpen(true)} className="cursor-pointer md:hidden bg-[#08569C] text-[white] text-[1rem] font-[600] rounded-[11.9px] py-[16px] px-[20px] mb-[3rem]">
                         SIGN UP FOR EARLY ACCESS
                      </button>
                </div>

@@ -1,11 +1,23 @@
+"use client";
+
 import { EnvelopeSvg } from "@/app/assets/svg";
+import { useState } from "react";
+import { WaitlistModalComponent } from "./modal/waitlistModal";
 
 export function JoinWaitlist() {
+     const [formOpen, setFormOpen] = useState(false);
+    
+            
    return (
       <main
          className="bg-[#08569C]  text-[white] py-[4.5rem]"
          style={{ fontFamily: "Montserrat, sans-serif" }}
       >
+          <WaitlistModalComponent
+                  isOpen={formOpen}
+                  onClose={() => setFormOpen(false)}
+                  setFormOpen={setFormOpen}
+               />
          <div className="max-w-[1200px] m-auto flex flex-col md:flex-row items-center justify-between w-full">
             <div>
                <h3 className="md:text-[25px] text-[18px] font-[400] max-w-[258px] md:max-w-full md:text-left text-center m-auto">
@@ -24,7 +36,7 @@ export function JoinWaitlist() {
                      placeholder="Your Email Address"
                      className="text-[#949494AB] text-[25px] h-[30px] ml-3"
                   />
-                  <button className="bg-[#08569C] text-[white] text-[22.65px] font-[600] rounded-[11.9px] cursor-pointer outline-none py-[16.76px] px-[20px]">
+                  <button  onClick={() => setFormOpen(true)} className="bg-[#08569C] text-[white] text-[22.65px] font-[600] rounded-[11.9px] cursor-pointer outline-none py-[16.76px] px-[20px]">
                      SIGN UP FOR EARLY ACCESS
                   </button>
                </div>
@@ -37,7 +49,7 @@ export function JoinWaitlist() {
                         className="text-[#949494AB] text-[18px] h-[30px] ml-3"
                      />
                   </div>
-                  <button className="bg-[#08569C] text-[white] text-[18px] font-[600] rounded-[11.9px] cursor-pointer outline-none py-[16.76px] px-[20px]">
+                  <button  onClick={() => setFormOpen(true)} className="bg-[#08569C] text-[white] text-[18px] font-[600] rounded-[11.9px] cursor-pointer outline-none py-[16.76px] px-[20px]">
                      SIGN UP FOR EARLY ACCESS
                   </button>
                </div>

@@ -7,7 +7,6 @@ import { Roboto } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { WaitlistModalComponent } from "./modal/waitlistModal";
 
 const roboto = Roboto({
    subsets: ["latin"],
@@ -17,7 +16,6 @@ const roboto = Roboto({
 export function HeaderComponent() {
    const pathname = usePathname();
    const [isOpen, setIsOpen] = useState(false);
-   const [formOpen, setFormOpen] = useState(false);
 
    const navLinks = [
       { name: "About Us", href: "/about" },
@@ -54,17 +52,9 @@ export function HeaderComponent() {
             </ul>
 
             {/* Get Started (Desktop) */}
-            <button
-               onClick={() => setFormOpen(true)}
-               className="cursor-pointer hidden md:block py-3 px-6 rounded-[9px] bg-[#08569C] text-white text-[17.13px] font-[600]"
-            >
+            <button className="cursor-pointer hidden md:block py-3 px-6 rounded-[9px] bg-[#08569C] text-white text-[17.13px] font-[600]">
                Get Started
             </button>
-            <WaitlistModalComponent
-               isOpen={formOpen}
-               onClose={() => setFormOpen(false)}
-               setFormOpen={setFormOpen}
-            />
             {/* Hamburger (Mobile) */}
             <button onClick={() => setIsOpen(true)} className="md:hidden">
                <Menu size={32} className="text-[#08569C]" />
@@ -105,10 +95,10 @@ export function HeaderComponent() {
                      </ul>
 
                      <button
-                        onClick={() => {
-                           setIsOpen(false);
-                           setFormOpen(true);
-                        }}
+                        // onClick={() => {
+                        //    setIsOpen(false);
+                        //    setFormOpen(true);
+                        // }}
                         className="mt-auto mb-10 py-3 px-6 rounded-[9px] bg-[#08569C] text-white text-[16px] font-[600]"
                      >
                         Get Started
