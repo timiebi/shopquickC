@@ -4,7 +4,9 @@ import { JoinWaitlist } from "@/modules/joinMovement";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import Head from "next/head";
+import { Toaster } from 'react-hot-toast';
 import "./globals.css";
+
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -55,6 +57,7 @@ export default function RootLayout({
         <HeaderComponent/>
         {children}
         <JoinWaitlist/>
+         <Toaster position="top-right" reverseOrder={false} />
         <Footer/>
         </body>
         </html>

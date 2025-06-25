@@ -13,7 +13,7 @@ export default function Home() {
                      <h1 className="text-[40px] md:text-[38px] max-w-[348px] md:text-left text-center m-auto md:max-w-[634px] text-[#08569C] font-[700] leading-[50px] mb-[2rem]">
                         Say Goodbye To Overpaying On Groceries. Say Hello To Smart Savings.
                      </h1>
-                     <p className="text-[20px] md:text-[22.02px] font-[500] text-[#1C1C1C] max-w-[348px] m-auto md:max-w-[583px] mb-[2rem] md:text-left text-center">
+                     <p className="text-[20px] md:text-[22.02px] font-[500] text-[#1C1C1C] max-w-[348px] m-auto md:mx-0 md:max-w-[583px] mb-[2rem] md:text-left text-center">
                         Shopquick helps you save 1000+ a year on groceries with real-time price
                         comparisons, Ai powered personalized deals and seamless checkout across
                         multiple supermarkets
