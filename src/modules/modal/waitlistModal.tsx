@@ -134,7 +134,7 @@ export function WaitlistModalComponent({ isOpen, setFormOpen }: WaitlistModalPro
                             You have been added
                         </DialogTitle>
                         <DialogTitle className="font-normal text-[1rem] text-[#525866]">
-                            Hi John, You are spot on! Await the big news
+                            Hi {formData.firstname}, You are spot on! Await the big news
                         </DialogTitle>
                     </DialogHeader>
                     <button
