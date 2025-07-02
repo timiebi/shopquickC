@@ -19,7 +19,7 @@ export function HeaderComponent() {
 
    const navLinks = [
       { name: "About Us", href: "/about" },
-      { name: "FAQs", href: "/#" },
+      { name: "FAQs", href: "/faq" },
       { name: "Contact", href: "/#" },
    ];
 
@@ -29,7 +29,7 @@ export function HeaderComponent() {
 
    return (
       <header
-         className={`${roboto.variable} w-full bg-white h-[94.53px] z-50 md:relative fixed top-0`}
+         className={`${roboto.variable} w-full bg-white h-[94.53px] z-50 md:relative fixed top-0 shadow`}
       >
          <div className="max-w-[1200px] mx-auto flex items-center justify-between h-full px-4">
             <Link href="/" className="cursor-pointer">

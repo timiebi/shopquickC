@@ -5,19 +5,19 @@ export function Footer() {
         <footer>
             {/*<div className="max-w-[1200px] m-auto">*/}
             <img src="/assets/footer.png" alt="footer" className="w-full md:block hidden"/>
-             <img src="/mobilenav .svg" alt="footer" className="w-full md:hidden"/>
+             {/* <img src="/mobilenav .svg" alt="footer" className="w-full md:hidden"/> */}
             {/*</div>*/}
-            <div className="bg-[#D6D6D6] py-[19px] md:px-[100px] flex items-center md:justify-between md:flex-row flex-col justify-center">
-                <div className="flex items-center gap-2 text-[#2A3D4D] text-[18px] font-[700] md:mb-0 mb-4">
+            <div className="bg-[#D6D6D6] md:mb-0 mb-10 py-[19px] md:px-[100px] flex items-center md:justify-between md:flex-row flex-col justify-center">
+                <div className="flex items-center gap-2 text-[#2A3D4D] text-[18px] font-[700] md:mb-0 mb-8">
                     <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M6.75 1.50075C5.35761 1.50075 4.02226 2.05387 3.03769 3.03844C2.05312 4.02301 1.5 5.35836 1.5 6.75075C1.5 8.89725 2.8365 10.968 4.3035 12.5723C5.0536 13.3895 5.87207 14.1412 6.75 14.8193C6.881 14.7188 7.03475 14.5963 7.21125 14.4518C7.9161 13.8729 8.57948 13.2454 9.1965 12.5738C10.6635 10.968 12 8.898 12 6.75075C12 5.35836 11.4469 4.02301 10.4623 3.03844C9.47774 2.05387 8.14239 1.50075 6.75 1.50075ZM6.75 16.6613L6.32475 16.3687L6.3225 16.3673L6.318 16.3635L6.303 16.353L6.24675 16.3133L6.04425 16.1655C5.01815 15.3943 4.06491 14.5307 3.1965 13.5855C1.6635 11.907 0 9.47775 0 6.75C2.66762e-08 4.95979 0.711159 3.2429 1.97703 1.97703C3.2429 0.711159 4.95979 0 6.75 0C8.54021 0 10.2571 0.711159 11.523 1.97703C12.7888 3.2429 13.5 4.95979 13.5 6.75C13.5 9.47775 11.8365 11.9078 10.3035 13.584C9.43533 14.5292 8.48234 15.3928 7.4565 16.164C7.37104 16.2278 7.28478 16.2906 7.19775 16.3523L7.182 16.3628L7.1775 16.3665L7.176 16.3673L6.75 16.6613ZM6.75 5.25075C6.35218 5.25075 5.97064 5.40879 5.68934 5.69009C5.40804 5.9714 5.25 6.35293 5.25 6.75075C5.25 7.14857 5.40804 7.53011 5.68934 7.81141C5.97064 8.09271 6.35218 8.25075 6.75 8.25075C7.14782 8.25075 7.52936 8.09271 7.81066 7.81141C8.09196 7.53011 8.25 7.14857 8.25 6.75075C8.25 6.35293 8.09196 5.9714 7.81066 5.69009C7.52936 5.40879 7.14782 5.25075 6.75 5.25075ZM3.75 6.75075C3.75 5.9551 4.06607 5.19204 4.62868 4.62943C5.19129 4.06682 5.95435 3.75075 6.75 3.75075C7.54565 3.75075 8.30871 4.06682 8.87132 4.62943C9.43393 5.19204 9.75 5.9551 9.75 6.75075C9.75 7.5464 9.43393 8.30946 8.87132 8.87207C8.30871 9.43468 7.54565 9.75075 6.75 9.75075C5.95435 9.75075 5.19129 9.43468 4.62868 8.87207C4.06607 8.30946 3.75 7.5464 3.75 6.75075Z"
                             fill="#08569C"/>
                     </svg>
 
-                    <p>Manchester , United kingdom</p>
+                    <p className="text-[#08569C]">Manchester , United kingdom</p>
                 </div>
-                <div className="flex items-center gap-[1.2rem] md:mb-0 mb-4">
+                <div className="hidden md:flex items-center gap-[1.2rem] md:mb-0 mb-4">
                     <div className="flex items-center gap-2 text-[#2A3D4D] text-[18px] font-[700]">
                         <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
