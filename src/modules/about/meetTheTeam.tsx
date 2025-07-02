@@ -5,10 +5,16 @@ const data = [
         name: "Charles Ajayi",
         role: "Chief Operations",
         img: "/assets/charles.png"
-    }, {
+    },
+    //  {
+    //     name: "Soyemi Akinwande",
+    //     role: "Chief Operations",
+    //     img: "/assets/soyemi.png"
+    // },
+    {
         name: "Soyemi Akinwande",
-        role: "Chief Operations",
-        img: "/assets/soyemi.png"
+        role: "Product Designer",
+        img: "/assets/productDesigner.svg"
     },
     {
         name: "Ibukun Odujoko",

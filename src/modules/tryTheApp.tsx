@@ -1,21 +1,28 @@
-import { AndroidSvg, IosSvg } from "@/app/assets/svg";
+'use client';
 
+import { AndroidSvg, IosSvg } from "@/app/assets/svg";
+import { useState } from "react";
+const tabs = ["Shoppers", "Stores", "AI"];
 export function TryTheApp() {
+    const [activeTab, setActiveTab] = useState("Shoppers");
     return (
-        <main style={{fontFamily: "Montserrat, sans-serif"}}>
+        <main style={{fontFamily: "Montserrat, sans-serif"}}  className="mb-9">
             <div className="max-w-[495px] m-auto mt-[4rem] mb-5">
                 <div
                     className="bg-[#BBDFFF] max-w-[371px] rounded-[16px] flex items-center p-[4px] justify-between m-auto">
-                    <div
-                        className="bg-[#08569C] text-white text-[24.54px] font-[400] py-[13px] px-[24px] rounded-[16px]">
-                        <span>Shoppers</span>
-                    </div>
-                    <div className=" text-[#525252] text-[24.54px] font-[400] py-[13px] px-[24px] rounded-[16px]">
-                        <span>Stores</span>
-                    </div>
-                    <div className=" text-[#525252] text-[24.54px] font-[400] py-[13px] px-[24px] rounded-[16px]">
-                        <span>AI</span>
-                    </div>
+                   {tabs.map((tab) => (
+                  <div
+                     key={tab}
+                     onClick={() => setActiveTab(tab)}
+                     className={`cursor-pointer text-[24.54px] font-[400] py-[13px] px-[24px] rounded-[16px]  ${
+                        activeTab === tab
+                           ? "bg-[#08569C] text-white"
+                           : "text-[#525252]"
+                     }`}
+                  >
+                     <span>{tab}</span>
+                  </div>
+               ))}
                 </div>
                 <div className="m-auto max-w-[226px]">
                     <h2 className="text-[#08569C] text-[35px] md:text-[36.93px] font-[800] text-center mt-4">Try the app</h2>
@@ -28,7 +35,7 @@ export function TryTheApp() {
                     <IosSvg/>
                     <AndroidSvg/>
                 </div>
-                <div className="max-w-[303px] m-auto mt-[1.5rem]">
+                <div className="max-w-[250px] m-auto mt-[1.5rem]">
                     <img src="/assets/iphone.png" alt="phone" />
                 </div>
             </div>
