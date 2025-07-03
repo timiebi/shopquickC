@@ -19,7 +19,7 @@ export default function Home() {
                setFormOpen={setFormOpen}
             />
          <div className="bg-[url('/assets/herobg.png')] bg-cover bg-center md:h-[669px] md:w-auto w-full">
-            <div className="max-w-[1200px] m-auto pt-[9rem] md:pt-[4rem]">
+            <div className="max-w-[1400px] m-auto pt-[9rem] md:pt-[4rem]">
                <div className="flex md:flex-row flex-col items-center justify-center md:justify-between gap-[2rem]">
                   <div>
                      <h1 className="text-[40px] md:text-[38px] max-w-[348px] md:text-left text-center m-auto md:max-w-[634px] text-[#08569C] font-[700] leading-[50px] mb-[2rem]">
@@ -37,7 +37,7 @@ export default function Home() {
                   <img
                      src="/assets/shopQuickHero.png"
                      alt="shopQuickHero"
-                     className="m-auto max-w-[348px] md:max-w-auto"
+                     className="m-auto max-w-[348px] md:max-w-[622px]"
                   />
                   <button  onClick={() => setFormOpen(true)} className="cursor-pointer md:hidden bg-[#08569C] text-[white] text-[1rem] font-[600] rounded-[11.9px] py-[16px] px-[20px] mb-[3rem]">
                         SIGN UP FOR EARLY ACCESS

@@ -130,3 +130,20 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+
+.no-scrollbar::-webkit-scrollbar {
+   display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.no-scrollbar {
+   scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and older Edge */
+.no-scrollbar {
+   -ms-overflow-style: none;
+}

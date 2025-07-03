@@ -1,6 +1,5 @@
 "use client";
 
-import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 
 const categories = [
@@ -52,21 +51,21 @@ const categories = [
 ];
 
 export function Carousel() {
-   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 1200 })]);
+   const [emblaRef] = useEmblaCarousel({ loop: true });
 
    return (
       <main className="carousel flex flex-col md:items-end mt-[3rem]">
-         <div className="max-w-[1200px]">
+         <div className="max-w-[1580px]">
             <div
                style={{ fontFamily: "Montserrat, sans-serif" }}
                className="flex items-center justify-between gap-2 text-[#525252] mb-[1rem] px-5"
             >
                <h1 className="md:text-[27.26px] text-[1.1rem]  font-[700]">Featured Categories</h1>
-               <p className="md:text-[25.27px] font-[500]">See all</p>
+               {/* <p className="md:text-[25.27px] font-[500]">See all</p> */}
             </div>
 
-            <div className="overflow-hidden px-5 embla" ref={emblaRef}>
-               <div className="flex gap-[2rem] embla__container">
+            <div className="overflow-scroll px-5 no-scrollbar" >
+               <div className="flex gap-[1rem] embla__container">
                   {categories.map((category, index) => (
                      <div
                         key={index}

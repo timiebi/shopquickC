@@ -24,14 +24,14 @@ export function HeaderComponent() {
    ];
 
    const baseClasses = "cursor-pointer py-3 px-3 text-left w-fit";
-   const hoverClasses = "hover:bg-[#D9EDFF] hover:border-b hover:border-[#08569C]";
+   const hoverClasses = " hover:border-b hover:border-[#08569C]";
    const activeClasses = "bg-[#D9EDFF] border-b border-[#08569C]";
 
    return (
       <header
-         className={`${roboto.variable} w-full bg-white h-[94.53px] z-50 md:relative fixed top-0 shadow`}
+         className={`${roboto.variable} w-full bg-white z-50 md:relative fixed top-0 shadow`}
       >
-         <div className="max-w-[1200px] mx-auto flex items-center justify-between h-full px-4">
+         <div className="max-w-[1400px] mx-auto flex items-center justify-between h-full px-4">
             <Link href="/" className="cursor-pointer">
                <LogoSvg />
             </Link>
@@ -43,7 +43,7 @@ export function HeaderComponent() {
                      <li
                         className={`${baseClasses} ${
                            pathname === href ? activeClasses : hoverClasses
-                        }`}
+                        } h-[94.53px] flex items-center `}
                      >
                         {name}
                      </li>
