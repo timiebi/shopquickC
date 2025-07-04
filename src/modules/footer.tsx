@@ -4,7 +4,7 @@ export function Footer() {
     return (
         <footer>
             {/*<div className="max-w-[1200px] m-auto">*/}
-            <img src="/assets/footer.png" alt="footer" className="w-full md:block hidden"/>
+            {/* <img src="/assets/footer.png" alt="footer" className="w-full md:block hidden"/> */}
              {/* <img src="/mobilenav .svg" alt="footer" className="w-full md:hidden"/> */}
             {/*</div>*/}
             <div className="bg-[#D6D6D6] md:mb-0 mb-10 py-[19px] md:px-[100px] flex items-center md:justify-between md:flex-row flex-col justify-center">

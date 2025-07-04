@@ -8,12 +8,9 @@ export function VisionMission() {
                      OUR MISSION
                   </h1>
                   <p className="text-[14px] md:text-[28.65px] font-[400] text-[#525252] text-center">
-                     To empower consumers with innovative, AI-driven, and data-powered grocery
-                     shopping solutions—ensuring they never overpay, never miss out on a great deal,
-                     and always shop with confidence and convenience. We are dedicated to saving
-                     time, hard-earned money, and reducing food waste, all while making shopping
-                     more intelligent, sustainable, and enjoyable. At ShopQuick, we’re
-                     revolutionizing the way you shop, one smart choice at a time.
+                     "A future where grocery shopping is completely optimised, driven by AI,
+                     real-time pricing, and smart integrations so that everyone can make
+                     cost-effective, convenient, and sustainable shopping decisions effortlessly."
                   </p>
                </div>
                <div>
@@ -21,12 +18,9 @@ export function VisionMission() {
                      OUR VISION
                   </h1>
                   <p className="text-[14px] md:text-[28.65px] font-[400] text-[#525252] text-center">
-                     To create a future where grocery shopping is fully optimized through advanced
-                     AI, real-time pricing updates, and seamless smart integrations. We aim to
-                     enable everyone to make cost-effective, convenient, and sustainable shopping
-                     decisions effortlessly. By harnessing innovative technology and data insights,
-                     we are committed to transforming the shopping experience—helping consumers save
-                     money, reduce waste, and shop smarter for a better tomorrow.
+                     "To empower consumers with smart, data-driven grocery shopping, ensuring they
+                     never overpay, never miss a deal, and always shop efficiently saving time,
+                     money, and reducing food waste."
                   </p>
                </div>
             </div>
