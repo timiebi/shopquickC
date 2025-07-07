@@ -2,26 +2,16 @@ import { Footer } from "@/modules/footer";
 import { HeaderComponent } from "@/modules/header";
 import { JoinWaitlist } from "@/modules/joinMovement";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import { Toaster } from 'react-hot-toast';
 import "./globals.css";
 
 
 const montserrat = Montserrat({
-    subsets: ['latin'],
-    // weight: '',
-    variable: '--font-Montserat',
-});
-
-const geistSans = Geist({
-    variable: "--font-Montserat",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-Montserat",
-    subsets: ["latin"],
+   subsets: ["latin"],
+   variable: "--font-montserrat",
+   display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -52,7 +42,7 @@ export default function RootLayout({
         </Head>
 
         <body
-            className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased `}
+           className={montserrat.variable}
         >
         <HeaderComponent/>
         {children}
