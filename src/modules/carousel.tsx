@@ -55,7 +55,7 @@ export function Carousel() {
 
    return (
       <main className="carousel flex flex-col md:items-end mt-[3rem]">
-         <div className="max-w-[1400px]">
+         <div className="md:max-w-[1400px]">
             <div
                style={{ fontFamily: "Montserrat, sans-serif" }}
                className="flex items-center justify-between gap-2 text-[#525252] mb-[1rem] px-5"

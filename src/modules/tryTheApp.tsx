@@ -6,14 +6,14 @@ const tabs = ["Shoppers", "Stores", "AI"];
 export function TryTheApp() {
    const [activeTab, setActiveTab] = useState("Shoppers");
    return (
-      <main style={{ fontFamily: "Montserrat, sans-serif" }} className="mb-9 mx-5">
-         <div className="max-w-[495px] m-auto mt-[4rem] mb-5">
+      <main style={{ fontFamily: "Montserrat, sans-serif" }} className="mb-9 md:mx-5">
+         <div className="max-w-[300px] md:max-w-[495px] m-auto mt-[4rem] mb-5">
             <div className="bg-[#BBDFFF] max-w-[371px] rounded-[16px] flex items-center p-[4px] justify-between m-auto">
                {tabs.map((tab) => (
                   <div
                      key={tab}
                      onClick={() => setActiveTab(tab)}
-                     className={`cursor-pointer text-[24.54px] md:text-[1.45rem] font-[400] py-[13px] px-[24px] rounded-[16px]  ${
+                     className={`cursor-pointer text-[1rem] md:text-[1.45rem] font-[400] py-[13px] px-[24px] rounded-[16px]  ${
                         activeTab === tab ? "bg-[#08569C] text-white" : "text-[#525252]"
                      }`}
                   >

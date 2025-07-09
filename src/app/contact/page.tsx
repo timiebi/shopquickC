@@ -4,7 +4,7 @@ export default function ContactPage() {
    return (
       <main className="relative ">
          <div className="bg-[url('/assets/herobg.png')] bg-cover bg-center h-[391px] md:h-[669px] md:w-auto w-full relative">
-            <div className="max-w-[1400px] m-auto pt-[2rem] md:pt-[4rem]">
+            <div className="max-w-[1400px] m-auto pt-[5rem] md:pt-[4rem]">
                <div className="flex md:flex-row flex-col items-center justify-center gap-[2rem]">
                   <div>
                      <h1 className="text-[40px] md:text-[4rem] max-w-[348px] md:text-left text-center m-auto md:max-w-[1058px] text-[#08569C] font-[700] leading-[50px] mb-[2rem]">
@@ -21,7 +21,7 @@ export default function ContactPage() {
             </div>
          </div>
          <section className="md:h-[600px] h-[520px]">
-            <div className="max-w-[350px] md:max-w-[600px] w-full rounded-[18px] border-[#525252] border-3 md:border-5 max-h-[646px] md:max-h-[581px] py-[1rem] px-[20px] md:px-[50px] absolute top-[20rem] md:top-[23rem] md:left-50 bg-white left-1/2 -translate-x-1/2  md:translate-x-0">
+            <div className="max-w-[350px] md:max-w-[600px] w-full rounded-[18px] border-[#525252] border-3 md:border-5 max-h-[646px] md:max-h-[581px] py-[1rem] px-[20px] md:px-[50px] absolute top-[22rem] md:top-[23rem] md:left-50 bg-white left-1/2 -translate-x-1/2  md:translate-x-0">
                <main className="md:max-w-[1173px] w-full mt-2">
                   <header className="hidden md:block">
                      <h1 className="text-[#525252] font-[800] text-[2rem]">Email Us</h1>

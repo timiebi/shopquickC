@@ -49,7 +49,7 @@ export default function Home() {
                </div>
             </div>
          </div>
-         <div className="mx-auto py-5  px-180 flex items-center justify-center overflow-x-scroll">
+         <div className="mx-auto py-5  md:px-180 flex items-center justify-center overflow-x-scroll">
             <Carousel />
          </div>
          <div className="mx-auto px-5  max-w-[1200px]">
