@@ -29,7 +29,7 @@ export function HeaderComponent() {
 
    return (
       <header
-         className={`${roboto.variable} w-full bg-white z-50 md:relative fixed top-0 shadow`}
+         className={`${roboto.variable} w-full bg-white z-50 md:relative fixed top-0 shadow md:py-0 py-3`}
       >
          <div className="max-w-[1400px] mx-auto flex items-center justify-between h-full px-4">
             <Link href="/" className="cursor-pointer">
@@ -37,7 +37,7 @@ export function HeaderComponent() {
             </Link>
 
             {/* Desktop Nav */}
-            <ul className="hidden md:flex text-[#08569C] text-[22.47px] font-[700] gap-[4rem]">
+            <ul className="hidden md:flex text-[#08569C] text-[1.2rem] font-[700] gap-[4rem]">
                {navLinks.map(({ name, href }) => (
                   <Link key={name} href={href}>
                      <li
@@ -52,7 +52,7 @@ export function HeaderComponent() {
             </ul>
 
             {/* Get Started (Desktop) */}
-            <button className="cursor-pointer hidden md:block py-3 px-6 rounded-[9px] bg-[#08569C] text-white text-[17.13px] font-[600]">
+            <button className="cursor-pointer hidden md:block py-3 px-6 rounded-[9px] bg-[#08569C] text-white text-[1rem] font-[600]">
                Get Started
             </button>
             {/* Hamburger (Mobile) */}

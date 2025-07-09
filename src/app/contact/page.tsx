@@ -1,4 +1,4 @@
-import { FaqPage } from "@/modules/faq";
+// import { FaqPage } from "@/modules/faq";
 
 export default function ContactPage() {
    return (
@@ -21,34 +21,37 @@ export default function ContactPage() {
             </div>
          </div>
          <section className="md:h-[600px] h-[520px]">
-            <div className="max-w-[350px] md:max-w-[1240px] w-full rounded-[18px] border-[#525252] border-3 md:border-5 max-h-[646px] md:max-h-[781px] py-[1rem] px-[20px] md:px-[50px] absolute top-[20rem] md:top-[23rem] md:left-50 bg-white left-1/2 -translate-x-1/2  md:translate-x-0">
+            <div className="max-w-[350px] md:max-w-[600px] w-full rounded-[18px] border-[#525252] border-3 md:border-5 max-h-[646px] md:max-h-[581px] py-[1rem] px-[20px] md:px-[50px] absolute top-[20rem] md:top-[23rem] md:left-50 bg-white left-1/2 -translate-x-1/2  md:translate-x-0">
                <main className="md:max-w-[1173px] w-full mt-2">
                   <header className="hidden md:block">
-                     <h1 className="text-[#525252] font-[800] text-[43.48px]">Email Us</h1>
+                     <h1 className="text-[#525252] font-[800] text-[2rem]">Email Us</h1>
                   </header>
                   <div className="mt-5">
-                     <div className="w-full flex items-center justify-between gap-6 flex-col md:flex-row">
+                     <div className="mb-5">
                         <input
                            type="text"
                            placeholder="Full Name"
-                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[44.7928466796875px] md:h-[69px] w-full px-[22px] text-[11.09px] md:text-[17.28px] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
+                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[30.7928466796875px] md:h-[50px] w-full px-[22px] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
                         />
+                     </div>
+                     <div className="w-full flex items-center justify-between gap-6 flex-col md:flex-row">
                         <input
                            type="text"
                            placeholder="Email Address"
-                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[44.7928466796875px] md:h-[69px] w-full px-[22px] text-[11.09px] md:text-[17.28px] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
+                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[44.7928466796875px] md:h-[50px] w-full px-[22px] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
                         />
                         <input
                            type="text"
                            placeholder="Phone Number"
-                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[44.7928466796875px] md:h-[69px] w-full px-[22px] text-[11.09px] md:text-[17.28px] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
+                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[44.7928466796875px] md:h-[50px] w-full px-[22px] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
                         />
                      </div>
                      <div className="mt-6 mb-5">
                         <textarea
-                           className="py-[2rem] px-4 md:px-8 rounded-[12px] h-[289px] md:h-[450px] w-full bg-[#F3F4F6] text-[11.09px] md:text-[17.28px] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
+                           className="py-[2rem] px-4 md:px-8 rounded-[12px] w-full bg-[#F3F4F6] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[1rem] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
                            name=""
                            id=""
+                           rows={6}
                            placeholder="Type your Message , Question or Inquiries here"
                         ></textarea>
                      </div>
@@ -59,9 +62,9 @@ export default function ContactPage() {
                </main>
             </div>
          </section>
-         <section>
+         {/* <section>
             <FaqPage />
-         </section>
+         </section> */}
       </main>
    );
 }

@@ -34,10 +34,10 @@ export function AboutMeetTheTeam() {
          <div className="max-w-[1200px] m-auto">
             <div>
                <header className="text-center">
-                  <h1 className="text-[#08569C] text-[35px] md:text-[50px] font-[800]">
+                  <h1 className="text-[#08569C] text-[35px] md:text-[3rem] font-[800]">
                      Meet the Team
                   </h1>
-                  <p className="text-[#525252] text-[18px] md:text-[28.65px] font-[400] max-w-[348px] md:max-w-[943px] m-auto">
+                  <p className="text-[#525252] text-[18px] md:text-[1.34rem] font-[400] max-w-[348px] md:max-w-[943px] m-auto">
                      At ShopQuick, our team is made up of passionate, innovative young professionals
                      dedicated to going the extra mile. We are committed to delivering exceptional
                      service,
@@ -53,7 +53,7 @@ export function AboutMeetTheTeam() {
                      </p>
                      <p className="text-[28.65px] font-[400] text-[#868383]">Founder & CEO</p>
                   </div>
-                  <p className="text-[18px] md:text-[28.65px] text-center font-[600] text-[#525252] max-w-[348px] md:max-w-[943px] m-auto mt-4">
+                  <p className="text-[18px] md:text-[1.4rem] text-center font-[600] text-[#525252] max-w-[348px] md:max-w-[943px] m-auto mt-4">
                      Visionary behind ShopQuick. Experienced IT project manager & entrepreneur with
                      a track record in scaling startup and fundraising
                   </p>
@@ -64,17 +64,17 @@ export function AboutMeetTheTeam() {
                   {data.map((list) => (
                      <div
                         key={list.name}
-                        className="bg-[#C6E6FF] rounded-[8.82px] pt-[7.84px] px-[7.84px] w-[282px] flex-shrink-0 snap-start relative"
+                        className="bg-[#C6E6FF] rounded-[8.82px] py-[7.84px] px-[7.84px] w-[282px] flex-shrink-0 snap-start relative"
                      >
                         <div>
-                           <img src={list.img} alt={list.name} className="w-full rounded-[8px]" />
+                           <img src={list.img} alt={list.name} className="w-full rounded-[8px] cover" />
                         </div>
                         <div className="absolute bottom-[3.5rem] right-6">
                            <LinkedinSvg />
                         </div>
                         <div className="mt-[1.5rem]">
-                           <p className="text-[#08569C] text-[15.25px] font-[800]">{list.name}</p>
-                           <span className="text-[22.45px] font-[400] text-[#868383]">
+                           <p className="text-[#08569C] text-[.95rem] font-[800]">{list.name}</p>
+                           <span className="text-[1.2rem] font-[400] text-[#868383]">
                               {list.role}
                            </span>
                         </div>

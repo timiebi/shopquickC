@@ -60,7 +60,7 @@ export function Carousel() {
                style={{ fontFamily: "Montserrat, sans-serif" }}
                className="flex items-center justify-between gap-2 text-[#525252] mb-[1rem] px-5"
             >
-               <h1 className="md:text-[27.26px] text-[1.1rem]  font-[700]">Featured Categories</h1>
+               <h1 className="md:text-[1.4rem] text-[1.1rem]  font-[700]">Featured Categories</h1>
                {/* <p className="md:text-[25.27px] font-[500]">See all</p> */}
             </div>
 
@@ -77,7 +77,7 @@ export function Carousel() {
                         </div>
                         <p
                            style={{ fontFamily: "Roboto, sans-serif" }}
-                           className="text-[20.23px] text-[#525252] leading-[20.23px] text-center max-w-[119.3541030883789px]"
+                           className="text-[1.1rem] text-[#525252] leading-[20.23px] text-center max-w-[119.3541030883789px]"
                         >
                            {category.title}
                         </p>

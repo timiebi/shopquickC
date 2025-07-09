@@ -17,20 +17,20 @@ export default function Home() {
             setFormOpen={setFormOpen}
          />
          <div className="bg-[url('/assets/herobg.png')] bg-cover bg-center md:h-[669px] md:w-auto w-full">
-            <div className="max-w-[1400px] m-auto pt-[9rem] md:pt-[4rem]">
+            <div className="max-w-[1400px] mx-5 pt-[9rem] md:pt-[4rem]">
                <div className="flex md:flex-row flex-col items-center justify-center md:justify-between gap-[2rem]">
                   <div>
-                     <h1 className="text-[40px] md:text-[38px] max-w-[348px] md:text-left text-center m-auto md:max-w-[634px] text-[#08569C] font-[700] leading-[50px] mb-[2rem]">
+                     <h1 className="text-[40px] md:text-[2.4rem] max-w-[348px] md:text-left text-center m-auto md:max-w-[634px] text-[#08569C] font-[700] leading-[50px] mb-[2rem]">
                         Say Goodbye To Overpaying On Groceries. Say Hello To Smart Savings.
                      </h1>
-                     <p className="text-[20px] md:text-[22.02px] font-[500] text-[#1C1C1C] max-w-[348px] m-auto md:mx-0 md:max-w-[583px] mb-[2rem] md:text-left text-center">
+                     <p className="text-[20px] md:text-[1.2rem] font-[500] text-[#1C1C1C] max-w-[348px] m-auto md:mx-0 md:max-w-[583px] mb-[2rem] md:text-left text-center">
                         Shopquick helps you save over a £1000+ annually on groceries with real-time
                         price comparisons, AI powered personalised deals and seamless checkout
                         across multiple supermarkets
                      </p>
                      <button
                         onClick={() => setFormOpen(true)}
-                        className="cursor-pointer hidden md:block bg-[#08569C] text-[white] text-[22.65px] font-[600] rounded-[11.9px] py-[16.76px] px-[20px]"
+                        className="cursor-pointer hidden md:block bg-[#08569C] text-[white] text-[1.2rem] font-[600] rounded-[11.9px] py-[16.76px] px-[20px]"
                      >
                         SIGN UP FOR EARLY ACCESS
                      </button>
@@ -38,7 +38,7 @@ export default function Home() {
                   <img
                      src="/assets/shopQuickHero.png"
                      alt="shopQuickHero"
-                     className="m-auto max-w-[348px] md:max-w-[622px]"
+                     className="m-auto max-w-[348px] md:max-w-[600px]"
                   />
                   <button
                      onClick={() => setFormOpen(true)}
@@ -49,10 +49,10 @@ export default function Home() {
                </div>
             </div>
          </div>
-         <div>
+         <div className="mx-5 max-w-[1200px] overflow-x-scroll">
             <Carousel />
          </div>
-         <div>
+         <div className="mx-5 max-w-[1200px]">
             <TheProblem />
          </div>
          <div>

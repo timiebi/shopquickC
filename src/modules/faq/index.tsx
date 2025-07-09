@@ -100,11 +100,11 @@ export function FaqPage() {
     <div>
       {/* FAQ Section */}
       <section className="relative">
-        <div className="bg-[#08569C] h-[532px] md:h-[885px] mt-[9rem] md:mt-[7rem]">
+        <div className="bg-[#08569C] h-[532px] md:h-[685px] mt-[9rem] md:mt-[7rem]">
           {/* Desktop */}
-          <div className="hidden h-[912px] md:w-[1241px] rounded-[24px] border-3 border-[#525252] gap-[2rem] md:flex justify-between absolute left-1/2 -translate-x-1/2 bottom-15 bg-white z-10 px-[1.2rem] py-[1rem]">
+          <div className="hidden h-[700px] overflow-hidden md:w-[1000px] rounded-[24px] border-3 border-[#525252] gap-[2rem] md:flex justify-between absolute left-1/2 -translate-x-1/2 bottom-15 bg-white z-10 px-[1.2rem] py-[1rem]">
             <div className="w-full md:max-h-[761px] overflow-auto pr-3 custom-scroll">
-              <h1 className="text-[50px] font-[600] text-[#525252] mb-6">FAQs</h1>
+              <h1 className="text-[2.3rem] font-[600] text-[#525252] mb-6">FAQs</h1>
               <div className="md:grid gap-4 flex w-full max-w-[300px] md:max-w-full">
                 {faq.map((member) => (
                   <div
@@ -113,7 +113,7 @@ export function FaqPage() {
                       setActiveMember(member);
                       setActiveIndex(faq.indexOf(member));
                     }}
-                    className={`cursor-pointer md:text-[24px] font-[600] rounded-[8px] md:py-[24px] px-[11px] transition-colors ${
+                    className={`cursor-pointer md:text-[1.3rem] font-[600] rounded-[8px] md:py-[24px] px-[11px] transition-colors ${
                       activeMember.name === member.name
                         ? "bg-[#08569C] text-white"
                         : "bg-[#FBFCFB] text-[#525252] border-2 border-[#F1F1F1]"
@@ -124,16 +124,16 @@ export function FaqPage() {
                 ))}
               </div>
             </div>
-            <div className="w-full">
-              <h1 className="text-[50px] font-[600] text-[#525252]">Answers</h1>
-              <div className="text-[24px] font-[600] text-[#525252] bg-[#BBDFFF] rounded-[24px] min-h-[761px] p-8">
+            <div className="w-full h-full max-h-[90%]">
+              <h1 className="text-[2.2rem] font-[600] text-[#525252]">Answers</h1>
+              <div className="text-[1.2rem] font-[600] text-[#525252] bg-[#BBDFFF] rounded-[24px] h-full  p-8">
                 <p>{activeMember.answer}</p>
               </div>
             </div>
           </div>
           {/* Mobile */}
           <div className="md:hidden rounded-[24px] min-h-[546px] border-3 border-[#525252] gap-[2rem] absolute mx-5 -top-15 bg-white z-10 px-[1.2rem] py-[1rem]">
-            <h1 className="text-[20.96px] font-[500] text-[#525252]">FAQs</h1>
+            <h1 className="text-[2.2rem] font-[500] text-[#525252]">FAQs</h1>
             <div className="mt-3 text-[16px] text-[#525252] font-[500]">
               <p>
                 {isExpanded ? activeMember.answer : previewText}
@@ -183,10 +183,10 @@ export function FaqPage() {
       <main className="mt-[3.5rem]" style={{ fontFamily: "Montserrat, sans-serif" }}>
         <div className="max-w-[1200px] m-auto">
           <header className="text-center">
-            <h1 className="text-[#08569C] text-[35px] md:text-[50px] font-[800]">
+            <h1 className="text-[#08569C] text-[35px] md:text-[3rem] font-[800]">
               Meet the Team
             </h1>
-            <p className="text-[#525252] text-[18px] md:text-[28.65px] font-[400] max-w-[943px] m-auto">
+            <p className="text-[#525252] text-[18px]  md:text-[1.4rem] font-[400] max-w-[943px] m-auto">
               At ShopQuick, our team is made up of passionate, innovative young professionals
               dedicated to going the extra mile. We are committed to delivering exceptional
               service.
@@ -197,7 +197,7 @@ export function FaqPage() {
               {teamData.map((list) => (
                 <div
                   key={list.name}
-                  className="bg-[#C6E6FF] rounded-[8.82px] pt-[7.84px] px-[7.84px] w-[282px] flex-shrink-0 snap-start relative"
+                  className="bg-[#C6E6FF] rounded-[8.82px] py-[7.84px] px-[7.84px] w-[282px] flex-shrink-0 snap-start relative"
                 >
                   <div>
                     <img
@@ -210,10 +210,10 @@ export function FaqPage() {
                     <LinkedinSvg />
                   </div>
                   <div className="mt-[1.5rem]">
-                    <p className="text-[#08569C] text-[15.25px] font-[800]">
+                    <p className="text-[#08569C] text-[1rem] font-[800]">
                       {list.name}
                     </p>
-                    <span className="text-[22.45px] font-[400] text-[#868383]">
+                    <span className="text-[1.2rem] font-[400] text-[#868383]">
                       {list.role}
                     </span>
                   </div>
