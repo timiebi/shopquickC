@@ -28,7 +28,7 @@ const data = [
 export function OurSolid() {
    return (
       <main style={{ fontFamily: "Montserrat, sans-serif" }}>
-         <div className="max-w-[1200px] mx-5 mt-[6rem]">
+         <div className="max-w-[1200px] mx-auto px-5 mt-[6rem]">
             <div className="max-w-[943px] m-auto">
                <h2 className="text-[25px] md:text-[1.4rem] text-[#525252] text-center font-[700]">
                   OUR SOLUTION
@@ -43,7 +43,7 @@ export function OurSolid() {
             </div>
          </div>
          <div className="bg-[#C7E6FF] py-[60px] md:px-[188px] px-[25px] mt-[4rem]">
-            <div className="md:max-w-[1060px] mx-3 grid grid-cols-1 md:grid-cols-2 gap-[2.5rem]">
+            <div className="md:max-w-[1060px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[2.5rem]">
                {data.map((list, index) => (
                   <div key={index} className="md:border-b-0 md:pb-0 pb-8 border-b-[1px] border-b-[#719CC2]">
                      <div className="max-w-[78.52680969238281px] md:max-w-[158.74929809570312px] m-auto mb-4">

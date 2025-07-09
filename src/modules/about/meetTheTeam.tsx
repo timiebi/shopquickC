@@ -30,7 +30,7 @@ const data = [
 
 export function AboutMeetTheTeam() {
    return (
-      <main className="mt-[3.5rem]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+      <main className="mt-[3.5rem] mx-5" style={{ fontFamily: "Montserrat, sans-serif" }}>
          <div className="max-w-[1200px] m-auto">
             <div>
                <header className="text-center">

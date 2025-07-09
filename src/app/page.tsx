@@ -17,7 +17,7 @@ export default function Home() {
             setFormOpen={setFormOpen}
          />
          <div className="bg-[url('/assets/herobg.png')] bg-cover bg-center md:h-[669px] md:w-auto w-full">
-            <div className="max-w-[1400px] mx-5 pt-[9rem] md:pt-[4rem]">
+            <div className="max-w-[1400px] mx-auto px-5 pt-[9rem] md:pt-[4rem]">
                <div className="flex md:flex-row flex-col items-center justify-center md:justify-between gap-[2rem]">
                   <div>
                      <h1 className="text-[40px] md:text-[2.4rem] max-w-[348px] md:text-left text-center m-auto md:max-w-[634px] text-[#08569C] font-[700] leading-[50px] mb-[2rem]">
@@ -49,10 +49,10 @@ export default function Home() {
                </div>
             </div>
          </div>
-         <div className="mx-5 max-w-[1200px] overflow-x-scroll">
+         <div className="mx-auto py-5  px-180 flex items-center justify-center overflow-x-scroll">
             <Carousel />
          </div>
-         <div className="mx-5 max-w-[1200px]">
+         <div className="mx-auto px-5  max-w-[1200px]">
             <TheProblem />
          </div>
          <div>

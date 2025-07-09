@@ -7,10 +7,10 @@ export default function ContactPage() {
             <div className="max-w-[1400px] m-auto pt-[2rem] md:pt-[4rem]">
                <div className="flex md:flex-row flex-col items-center justify-center gap-[2rem]">
                   <div>
-                     <h1 className="text-[40px] md:text-[73.47px] max-w-[348px] md:text-left text-center m-auto md:max-w-[1058px] text-[#08569C] font-[700] leading-[50px] mb-[2rem]">
+                     <h1 className="text-[40px] md:text-[4rem] max-w-[348px] md:text-left text-center m-auto md:max-w-[1058px] text-[#08569C] font-[700] leading-[50px] mb-[2rem]">
                         We'd love to hear from you
                      </h1>
-                     <p className="text-[13.79px] md:text-[25px] font-[400] text-[#525252] max-w-[348px] m-auto md:max-w-[1000px] mb-[2rem] text-center">
+                     <p className="text-[13.79px] md:text-[1.5rem] font-[400] text-[#525252] max-w-[348px] m-auto md:max-w-[1000px] mb-[2rem] text-center">
                         Have questions about how ShopQuick works, our pricing, policies, or the
                         benefits of using our app? Our dedicated team is here to help. Whether you
                         need assistance with price comparisons, store navigation, scanning, or

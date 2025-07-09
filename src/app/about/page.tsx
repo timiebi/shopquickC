@@ -8,7 +8,7 @@ export default function About() {
                 <div
                     style={{fontFamily: "Montserrat, sans-serif"}}
                     className="bg-[url('/assets/herobg.png')] bg-cover bg-center h-[669px]">
-                    <div className="max-w-[1200px] mx-5 pt-[9rem] md:pt-[4rem]">
+                    <div className="max-w-[1200px] mx-auto px-5 pt-[9rem] md:pt-[4rem]">
                         <div className="flex items-center justify-center gap-[2rem]">
                             <div>
                                 <h1 className="text-[40px] md:text-[3.5rem] text-[#08569C] font-[700] leading-[50px] mb-[2rem] text-center m-auto">
@@ -24,8 +24,8 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="max-w-[1200px] m-auto pt-[4rem] hidden md:block">
-                    <div className="absolute top-[18rem] max-w-[1200px]">
+                <div className="max-w-[1200px] justify-center m-auto pt-[4rem] hidden md:flex">
+                    <div className="absolute top-[18rem] px-5 max-w-[1200px] m-auto">
                         <div className="flex items-center justify-between">
                             <div className="max-w-[290px] relative top-9">
                                 <img src="/assets/fruit.png" alt="join us" className="w-full" />

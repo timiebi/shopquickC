@@ -17,8 +17,8 @@ export function JoinWaitlist() {
             onClose={() => setFormOpen(false)}
             setFormOpen={setFormOpen}
          />
-         <div className="mx-5">
-            <div className="max-w-[1200px] m-auto flex flex-col md:flex-row items-center justify-between w-full">
+         <div>
+            <div className="max-w-[1400px] m-auto px-5 flex flex-col md:flex-row items-center justify-between w-full">
                <div>
                   <h3 className="md:text-[1.4rem] text-[18px] font-[400] max-w-[258px] md:max-w-full md:text-left text-center m-auto">
                      Enjoy a complimentary voucher on your first order with us!
