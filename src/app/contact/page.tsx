@@ -1,5 +1,28 @@
 // import { FaqPage } from "@/modules/faq";
 
+const constact = [
+   {
+      name: "1900 - 6666",
+      icon: "/assets/contactIcon/phone.svg",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/x.svg",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/insta.svg",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/fb.svg",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/talk.svg",
+   },
+];
+
 export default function ContactPage() {
    return (
       <main className="relative ">
@@ -20,8 +43,8 @@ export default function ContactPage() {
                </div>
             </div>
          </div>
-         <section className="md:h-[600px] h-[520px]">
-            <div className="max-w-[350px] md:max-w-[600px] w-full rounded-[18px] border-[#525252] border-3 md:border-5 max-h-[646px] md:max-h-[581px] py-[1rem] px-[20px] md:px-[50px] absolute top-[22rem] md:top-[23rem] md:left-50 bg-white left-1/2 -translate-x-1/2  md:translate-x-0">
+         <section className="mt-30 flex flex-col md:flex-row items-center justify-center gap-[4rem] md:gap-9 mb-[5rem] md:mb-6">
+            <div className="max-w-[350px] md:max-w-[500px] w-full rounded-[18px] border-[#525252] border-3 md:border-5 max-h-[646px] md:max-h-[581px] py-[1rem] px-[20px] md:px-[50px]  top-[22rem] md:top-[23rem] md:left-50 bg-white left-1/2  md:translate-x-0">
                <main className="md:max-w-[1173px] w-full mt-2">
                   <header className="hidden md:block">
                      <h1 className="text-[#525252] font-[800] text-[2rem]">Email Us</h1>
@@ -31,24 +54,24 @@ export default function ContactPage() {
                         <input
                            type="text"
                            placeholder="Full Name"
-                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[30.7928466796875px] md:h-[50px] w-full px-[22px] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
+                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[30.7928466796875px] md:h-[50px] w-full px-[22px] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[1rem] placeholder:text-[#525252] placeholder-shown:md:text-[1rem] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
                         />
                      </div>
                      <div className="w-full flex items-center justify-between gap-6 flex-col md:flex-row">
                         <input
                            type="text"
                            placeholder="Email Address"
-                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[44.7928466796875px] md:h-[50px] w-full px-[22px] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
+                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[44.7928466796875px] md:h-[50px] w-full px-[22px] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[1rem] placeholder:text-[#525252] placeholder-shown:md:text-[1rem] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
                         />
                         <input
                            type="text"
                            placeholder="Phone Number"
-                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[44.7928466796875px] md:h-[50px] w-full px-[22px] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[17.28px] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
+                           className="border-none outline-none bg-[#F3F4F6] rounded-[12px] h-[44.7928466796875px] md:h-[50px] w-full px-[22px] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[1rem] placeholder:text-[#525252] placeholder-shown:md:text-[1rem] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
                         />
                      </div>
                      <div className="mt-6 mb-5">
                         <textarea
-                           className="py-[2rem] px-4 md:px-8 rounded-[12px] w-full bg-[#F3F4F6] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[1rem] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
+                           className="py-[2rem] px-4 md:px-8 rounded-[12px] w-full bg-[#F3F4F6] text-[11.09px] md:text-[1rem] text-[#525252] placeholder:text-[11.09px] placeholder:md:text-[.975rem] placeholder:text-[#525252] placeholder-shown:md:text-[17.28px] placeholder-shown:text-[11.09px] placeholder-shown:text-[#525252]"
                            name=""
                            id=""
                            rows={6}
@@ -60,6 +83,19 @@ export default function ContactPage() {
                      </button>
                   </div>
                </main>
+            </div>
+            <div>
+               <div>
+                  <h1 className="text-center mb-4 font-[800] text-[1.875rem]">Follow Us</h1>
+                  <div className="flex items-center flex-wrap max-w-[500px] gap-6 justify-center">
+                     {constact.map((list) => (
+                        <div className="flex items-center flex-col gap-2 cursor-pointer">
+                           <img src={list.icon} alt="" />
+                           <p className="text-[17.78px] text-center">{list.name}</p>
+                        </div>
+                     ))}
+                  </div>
+               </div>
             </div>
          </section>
          {/* <section>

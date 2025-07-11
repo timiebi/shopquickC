@@ -100,12 +100,12 @@ export function FaqPage() {
     <div>
       {/* FAQ Section */}
       <section className="relative">
-        <div className="bg-[#08569C] h-[532px] md:h-[685px] mt-[9rem] md:mt-[7rem]">
+        <div className="bg-[#08569C] h-[532px] md:h-[685px] mt-[9rem] md:mt-[9rem]">
           {/* Desktop */}
-          <div className="hidden h-[600px] overflow-hidden md:w-[900px] rounded-[24px] border-3 border-[#525252] gap-[2rem] md:flex justify-between absolute left-1/2 -translate-x-1/2 bottom-40 bg-white z-10 px-[1.2rem] py-[1rem]">
-            <div className="w-full md:max-h-[761px] overflow-auto pr-3 custom-scroll">
-              <h1 className="text-[2rem] font-[600] text-[#525252] mb-6">FAQs</h1>
-              <div className="md:grid gap-4 flex w-full max-w-[300px] md:max-w-full">
+          <div className="hidden h-[700px] overflow-hidden md:w-[1200px] rounded-[24px] border-3 border-[#525252] gap-[2rem] md:flex justify-between absolute left-1/2 -translate-x-1/2 bottom-20 bg-white z-10 px-[1.2rem] py-[1rem]">
+            <div className="w-full md:max-h-[761px] overflow-auto pr-3 custom-scroll max-w-[565px]">
+              <h1 className="text-[2.5rem] font-[600] text-[#525252] mb-6 fixed bg-white w-full max-w-[565px]">FAQs</h1>
+              <div className="md:grid gap-4 flex w-full max-w-[300px] md:max-w-full md:mt-20">
                 {faq.map((member) => (
                   <div
                     key={member.name}
@@ -113,7 +113,7 @@ export function FaqPage() {
                       setActiveMember(member);
                       setActiveIndex(faq.indexOf(member));
                     }}
-                    className={`cursor-pointer md:text-[1rem] font-[600] rounded-[8px] md:py-[24px] px-[11px] transition-colors ${
+                    className={`cursor-pointer md:text-[1.2rem] font-[600] rounded-[8px] md:py-[24px] px-[11px] transition-colors ${
                       activeMember.name === member.name
                         ? "bg-[#08569C] text-white"
                         : "bg-[#FBFCFB] text-[#525252] border-2 border-[#F1F1F1]"
@@ -124,9 +124,9 @@ export function FaqPage() {
                 ))}
               </div>
             </div>
-            <div className="w-full h-full max-h-[90%]">
-              <h1 className="text-[2rem] font-[600] text-[#525252]">Answers</h1>
-              <div className="text-[1.1rem] font-[600] text-[#525252] bg-[#BBDFFF] rounded-[24px] h-full  p-8">
+            <div className="w-full h-full max-h-[90%] max-w-[565px]">
+              <h1 className="text-[2.5rem] font-[600] text-[#525252] w-full bg-white max-w-[565px] z-90 relative">Answers</h1>
+              <div className="text-[1.3rem] font-[600] text-[#525252] bg-[#BBDFFF] rounded-[24px] h-full  p-8 mt-3">
                 <p>{activeMember.answer}</p>
               </div>
             </div>
