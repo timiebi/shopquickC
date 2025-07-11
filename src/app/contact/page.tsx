@@ -26,7 +26,7 @@ const constact = [
 export default function ContactPage() {
    return (
       <main className="relative ">
-         <div className="bg-[url('/assets/herobg.png')] bg-cover bg-center h-[391px] md:h-[669px] md:w-auto w-full relative">
+         <div className="bg-[url('/assets/herobg.png')] bg-cover bg-center h-[391px] md:h-[409px] md:w-auto w-full relative">
             <div className="max-w-[1400px] m-auto pt-[5rem] md:pt-[4rem]">
                <div className="flex md:flex-row flex-col items-center justify-center gap-[2rem]">
                   <div>
