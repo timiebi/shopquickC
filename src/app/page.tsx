@@ -16,17 +16,22 @@ export default function Home() {
             onClose={() => setFormOpen(false)}
             setFormOpen={setFormOpen}
          />
-         <div className="bg-[url('/assets/herobg.png')] bg-cover bg-center md:h-[669px] md:w-auto w-full">
+         <div
+            style={{ backgroundImage: `url(/assets/herobg.png)`, backgroundColor: "#EBF4FF" }}
+            className=" bg-cover bg-center md:h-[669px] md:w-auto w-full"
+         >
             <div className="max-w-[1400px] mx-auto px-5 pt-[9rem] md:pt-[4rem]">
                <div className="flex md:flex-row flex-col items-center justify-center md:justify-between gap-[2rem]">
                   <div>
-                     <h1 className="text-[40px] md:text-[2.4rem] max-w-[348px] md:text-left text-center m-auto md:max-w-[634px] text-[#08569C] font-[700] leading-[50px] mb-[2rem]">
-                        Say Goodbye To Overpaying On Groceries. Say Hello To Smart Savings.
+                     <h1 className="text-[40px] md:text-[2.3rem] max-w-[348px] md:text-left text-center m-auto md:max-w-[600px] text-[#525252]  font-[700] leading-[50px] mb-[2rem]">
+                        Stop Overpaying on <span className="text-[#08569C]">Groceries</span>. Join
+                        Other Smart Savers{" "}
+                        <span className="text-[#08569C]">Saving £1,000+ yearly!</span>
                      </h1>
                      <p className="text-[20px] md:text-[1.2rem] font-[500] text-[#1C1C1C] max-w-[348px] m-auto md:mx-0 md:max-w-[583px] mb-[2rem] md:text-left text-center">
-                        Shopquick helps you save over a £1000+ annually on groceries with real-time
-                        price comparisons, AI powered personalised deals and seamless checkout
-                        across multiple supermarkets
+                        Shopquick helps you save 1000+ a year on groceries with real-time price
+                        comparisons, AI powered personalised deals and seamless checkout across
+                        multiple supermarkets
                      </p>
                      <button
                         onClick={() => setFormOpen(true)}
@@ -57,6 +62,16 @@ export default function Home() {
          </div>
          <div>
             <OurSolid />
+         </div>
+         <div className="max-w-[1200px] m-auto px-5 md:px-0 text-center mt-15">
+            <div>
+               <h1 className="text-[#08569C] text-[1.2rem] md:text-[2.3rem] font-[800] max-w-[883px] m-auto">Why ShopQuick Stands out From Competitors</h1>
+               <div className="mt-8">
+                  <div>
+                     <img src="/assets/standout.png" alt="" />
+                  </div>
+               </div>
+            </div>
          </div>
          <div>
             <TryTheApp />

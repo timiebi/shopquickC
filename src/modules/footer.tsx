@@ -1,114 +1,165 @@
-import {
-   FacebookSvg,
-   InstagramSvg,
-   PinInterestSvg,
-   TwitterSvg,
-   YoutubeSvg,
-} from "@/app/assets/svg";
+import Link from "next/link";
+
+const list = [
+   {
+      header: "Location",
+      list: [
+         {
+            name: "Manchester",
+            // link: "",
+         },
+      ],
+   },
+   {
+      header: "Download",
+      list: [
+         {
+            name: "Google Play Store",
+            // link: "",
+         },
+         {
+            name: "IOS Apple Store",
+            // link: "",
+         },
+      ],
+   },
+   {
+      header: "Help",
+      list: [
+         {
+            name: "contact",
+            link: "contact",
+         },
+         {
+            name: "FAQs",
+            link: "faq",
+         },
+         {
+            name: "About Us",
+            link: "about",
+         },
+         {
+            name: "Join Us",
+            // link: "",
+         },
+      ],
+   },
+   {
+      header: "Legal",
+      list: [
+         {
+            name: "Privacy Policy",
+            // link: "",
+         },
+         {
+            name: "Terms and Conditions",
+            // link: "",
+         },
+      ],
+   },
+];
+
+const socials = [
+   {
+      name: "1900 - 6666",
+      icon: "/assets/contactIcon/phone.svg",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/x.svg",
+      link: "https://x.com/shopquickapp?s=11&t=IoFjrBfAVZuN8lobIYnE-w",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/insta.svg",
+      link: "https://www.instagram.com/shopquickapp?igsh=MXExc2ZsYXZ5N3Vscw%3D%3D&utm_source=qr",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/fb.svg",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/talk.svg",
+   },
+];
 
 export function Footer() {
    return (
-      <footer>
-         {/*<div className="max-w-[1200px] m-auto">*/}
-         {/* <img src="/assets/footer.png" alt="footer" className="w-full md:block hidden"/> */}
-         {/* <img src="/mobilenav .svg" alt="footer" className="w-full md:hidden"/> */}
-         {/*</div>*/}
-         <div className="bg-[#D6D6D6] md:mb-0 mb-10 py-[19px] md:px-[100px] ">
-            <div className="w-full flex items-center md:justify-between md:flex-row flex-col justify-center max-w-[1400px] m-auto">
-               <div className="flex items-center gap-2 text-[#2A3D4D] text-[18px] font-[700] md:mb-0 mb-8">
-                  <svg
-                     width="14"
-                     height="17"
-                     viewBox="0 0 14 17"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg"
-                  >
-                     <path
-                        d="M6.75 1.50075C5.35761 1.50075 4.02226 2.05387 3.03769 3.03844C2.05312 4.02301 1.5 5.35836 1.5 6.75075C1.5 8.89725 2.8365 10.968 4.3035 12.5723C5.0536 13.3895 5.87207 14.1412 6.75 14.8193C6.881 14.7188 7.03475 14.5963 7.21125 14.4518C7.9161 13.8729 8.57948 13.2454 9.1965 12.5738C10.6635 10.968 12 8.898 12 6.75075C12 5.35836 11.4469 4.02301 10.4623 3.03844C9.47774 2.05387 8.14239 1.50075 6.75 1.50075ZM6.75 16.6613L6.32475 16.3687L6.3225 16.3673L6.318 16.3635L6.303 16.353L6.24675 16.3133L6.04425 16.1655C5.01815 15.3943 4.06491 14.5307 3.1965 13.5855C1.6635 11.907 0 9.47775 0 6.75C2.66762e-08 4.95979 0.711159 3.2429 1.97703 1.97703C3.2429 0.711159 4.95979 0 6.75 0C8.54021 0 10.2571 0.711159 11.523 1.97703C12.7888 3.2429 13.5 4.95979 13.5 6.75C13.5 9.47775 11.8365 11.9078 10.3035 13.584C9.43533 14.5292 8.48234 15.3928 7.4565 16.164C7.37104 16.2278 7.28478 16.2906 7.19775 16.3523L7.182 16.3628L7.1775 16.3665L7.176 16.3673L6.75 16.6613ZM6.75 5.25075C6.35218 5.25075 5.97064 5.40879 5.68934 5.69009C5.40804 5.9714 5.25 6.35293 5.25 6.75075C5.25 7.14857 5.40804 7.53011 5.68934 7.81141C5.97064 8.09271 6.35218 8.25075 6.75 8.25075C7.14782 8.25075 7.52936 8.09271 7.81066 7.81141C8.09196 7.53011 8.25 7.14857 8.25 6.75075C8.25 6.35293 8.09196 5.9714 7.81066 5.69009C7.52936 5.40879 7.14782 5.25075 6.75 5.25075ZM3.75 6.75075C3.75 5.9551 4.06607 5.19204 4.62868 4.62943C5.19129 4.06682 5.95435 3.75075 6.75 3.75075C7.54565 3.75075 8.30871 4.06682 8.87132 4.62943C9.43393 5.19204 9.75 5.9551 9.75 6.75075C9.75 7.5464 9.43393 8.30946 8.87132 8.87207C8.30871 9.43468 7.54565 9.75075 6.75 9.75075C5.95435 9.75075 5.19129 9.43468 4.62868 8.87207C4.06607 8.30946 3.75 7.5464 3.75 6.75075Z"
-                        fill="#08569C"
-                     />
-                  </svg>
-
-                  <p className="text-[#08569C]">Manchester , United kingdom</p>
+      <footer className="bg-[#F7F8FD] w-full">
+         <div className="max-w-[1200px] w-full mx-5 md:mx-auto pt-20">
+            <div className="flex  flex-col md:flex-row items-start w-full justify-between">
+               <img src="/assets/shopQuiclogo.png" alt="" className="max-w-[243px]" />
+               <div className="flex items-start flex-col md:flex-row w-full justify-between max-w-[764.0579223632812px]">
+                  {list.map((list, index) => (
+                     <ul key={index} className="mb-8 md:mb-0">
+                        <h1 className="text-[#08569C] font-[700] text-[1.1rem] mb-1 uppercase">
+                           {list.header}
+                        </h1>
+                        {list.list.map((sublist, index) => (
+                           <li
+                              className="text-[1rem] font-normal text-[#000] mb-1.5 capitalize"
+                              key={index}
+                           >
+                              {sublist.link ? (
+                                 <Link href={sublist.link}>{sublist.name}</Link>
+                              ) : (
+                                 sublist.name
+                              )}
+                           </li>
+                        ))}
+                     </ul>
+                  ))}
                </div>
-               {/* <div className="hidden md:flex items-center gap-[1.2rem] md:mb-0 mb-4">
-               <div className="flex items-center gap-2 text-[#2A3D4D] text-[18px] font-[700]">
-                  <svg
-                     width="30"
-                     height="32"
-                     viewBox="0 0 30 32"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg"
-                  >
-                     <path
-                        d="M28.9358 19.0886C29.3836 17.2148 29.4579 15.2712 29.1546 13.3688C28.8512 11.4663 28.1761 9.64225 27.1678 8.0007C25.1314 4.68544 21.8615 2.31491 18.0773 1.4106M23.448 17.7771C24.0046 15.4484 23.6132 12.994 22.36 10.9538C21.1069 8.91367 19.0946 7.45488 16.7659 6.89838M1.6003 11.4191C1.13951 10.106 1.142 8.67481 1.60737 7.36338C2.07275 6.05194 2.97296 4.93929 4.15834 4.21039L5.19182 3.57558C5.65422 3.29498 6.20864 3.2081 6.7347 3.33381C7.26077 3.45953 7.71601 3.78769 8.00157 4.24704L10.6525 8.59329C10.9326 9.05162 11.0198 9.60227 10.895 10.1247C10.7701 10.6472 10.4434 11.0989 9.98628 11.3811C9.52693 11.6666 9.19877 12.1219 9.07305 12.6479C8.94734 13.174 9.03422 13.7284 9.31483 14.1908L13.5747 21.126C13.8603 21.5854 14.3155 21.9135 14.8416 22.0393C15.3676 22.165 15.9221 22.0781 16.3845 21.7975C16.8428 21.5173 17.3934 21.4301 17.9159 21.555C18.4384 21.6799 18.8901 22.0066 19.1722 22.4637L21.8766 26.6835C22.1572 27.1459 22.2441 27.7003 22.1184 28.2264C21.9926 28.7524 21.6645 29.2077 21.2051 29.4932L20.1717 30.128C18.995 30.8762 17.5973 31.1982 16.2119 31.0402C14.8265 30.8823 13.5372 30.254 12.559 29.2602C7.78973 24.0756 4.06844 18.0172 1.6003 11.4191Z"
-                        stroke="#7F7F7F"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                     />
-                  </svg>
-                  <div>
-                     <p>1900 - 6666</p>
-                     <span className="text-[#7E7E7E] text-[12px] font-[400]">
-                        Working 8:00 - 22:00
-                     </span>
+            </div>
+            <div className="w-full border-1 borer-[#999999] mt-20"></div>
+            <div className="flex items-center flex-wrap md:flex-nowrap gap-5 md:gap-10 py-5">
+               {socials.map((socials, index) => (
+                  <div key={index} className="flex items-center flex-col">
+                     <img src={socials.icon} alt="" className="max-w-[15px] md:max-w-[19.058164596557617px]" />
+                     <p className="text-[8.66px] text-[#121111] font-[300]">
+                        {socials.link ? (
+                           <a href={socials.link}>{socials.name}</a>
+                        ) : (
+                           <span>{socials.name}</span>
+                        )}
+                     </p>
+                     {/* <span className="text-[8.66px] text-[#121111] font-[300]">{socials.name}</span> */}
                   </div>
-               </div>
-               <div className="flex items-center gap-2 text-[#2A3D4D] text-[18px] font-[700]">
-                  <svg
-                     width="30"
-                     height="32"
-                     viewBox="0 0 30 32"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg"
-                  >
-                     <path
-                        d="M28.9358 19.0886C29.3836 17.2148 29.4579 15.2712 29.1546 13.3688C28.8512 11.4663 28.1761 9.64225 27.1678 8.0007C25.1314 4.68544 21.8615 2.31491 18.0773 1.4106M23.448 17.7771C24.0046 15.4484 23.6132 12.994 22.36 10.9538C21.1069 8.91367 19.0946 7.45488 16.7659 6.89838M1.6003 11.4191C1.13951 10.106 1.142 8.67481 1.60737 7.36338C2.07275 6.05194 2.97296 4.93929 4.15834 4.21039L5.19182 3.57558C5.65422 3.29498 6.20864 3.2081 6.7347 3.33381C7.26077 3.45953 7.71601 3.78769 8.00157 4.24704L10.6525 8.59329C10.9326 9.05162 11.0198 9.60227 10.895 10.1247C10.7701 10.6472 10.4434 11.0989 9.98628 11.3811C9.52693 11.6666 9.19877 12.1219 9.07305 12.6479C8.94734 13.174 9.03422 13.7284 9.31483 14.1908L13.5747 21.126C13.8603 21.5854 14.3155 21.9135 14.8416 22.0393C15.3676 22.165 15.9221 22.0781 16.3845 21.7975C16.8428 21.5173 17.3934 21.4301 17.9159 21.555C18.4384 21.6799 18.8901 22.0066 19.1722 22.4637L21.8766 26.6835C22.1572 27.1459 22.2441 27.7003 22.1184 28.2264C21.9926 28.7524 21.6645 29.2077 21.2051 29.4932L20.1717 30.128C18.995 30.8762 17.5973 31.1982 16.2119 31.0402C14.8265 30.8823 13.5372 30.254 12.559 29.2602C7.78973 24.0756 4.06844 18.0172 1.6003 11.4191Z"
-                        stroke="#7F7F7F"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                     />
-                  </svg>
-                  <div>
-                     <p>1900 - 8888</p>
-                     <span className="text-[#7E7E7E] text-[12px] font-[400]">
-                        24/7 Support Center
-                     </span>
-                  </div>
-               </div>
-            </div> */}
-               <div>
-                  <div className="flex items-center gap-3 mb-3">
-                     <p>Follow Us</p>
-                     <div className="flex items-center gap-2">
-                        <FacebookSvg />
-
-                        <a
-                           href="https://x.com/shopquickapp?s=11&t=IoFjrBfAVZuN8lobIYnE-w"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        >
-                           <TwitterSvg />
-                        </a>
-                        <a
-                           href="https://www.instagram.com/shopquickapp?igsh=MXExc2ZsYXZ5N3Vscw%3D%3D&utm_source=qr"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        >
-                           <InstagramSvg />
-                        </a>
-
-                        <PinInterestSvg />
-
-                        <YoutubeSvg />
-                     </div>
-                  </div>
-                  <p className="text-[#7E7E7E] text-[12px] font-[400]">
-                     Up to 15% discount on your first subcribe
-                  </p>
-               </div>
+               ))}
             </div>
          </div>
       </footer>
    );
 }
+
+//  <div>
+//                   <div className="flex items-center gap-3 mb-3">
+//                      <p>Follow Us</p>
+//                      <div className="flex items-center gap-2">
+//                         <FacebookSvg />
+
+//                         <a
+//                            href="https://x.com/shopquickapp?s=11&t=IoFjrBfAVZuN8lobIYnE-w"
+//                            target="_blank"
+//                            rel="noopener noreferrer"
+//                         >
+//                            <TwitterSvg />
+//                         </a>
+//                         <a
+//                            href="https://www.instagram.com/shopquickapp?igsh=MXExc2ZsYXZ5N3Vscw%3D%3D&utm_source=qr"
+//                            target="_blank"
+//                            rel="noopener noreferrer"
+//                         >
+//                            <InstagramSvg />
+//                         </a>
+
+//                         <PinInterestSvg />
+
+//                         <YoutubeSvg />
+//                      </div>
+//                   </div>
+//                   <p className="text-[#7E7E7E] text-[12px] font-[400]">
+//                      Up to 15% discount on your first subcribe
+//                   </p>
+//                </div>
