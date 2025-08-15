@@ -7,7 +7,7 @@ export default function About() {
          <div className="relative mb-[95rem] md:mb-[30rem] w-full">
             <div
                style={{ fontFamily: "Montserrat, sans-serif" }}
-               className="bg-[url('/assets/herobg.png')] w-full bg-cover bg-center h-[679px] md:h-[1050px]"
+               className="bg-[url('/assets/herobg2.png')] w-full bg-cover bg-center h-[679px] md:h-[1050px]"
             >
                <div className="max-w-[1200px] md:mx-auto md:px-5 pt-[9rem] md:pt-[4rem]">
                   <div className="flex items-center justify-center gap-[2rem]">

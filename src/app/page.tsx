@@ -17,7 +17,7 @@ export default function Home() {
             setFormOpen={setFormOpen}
          />
          <div
-            style={{ backgroundImage: `url(/assets/herobg.png)`, backgroundColor: "#EBF4FF" }}
+            style={{ backgroundImage: `url(/assets/herobg2.png)`, backgroundColor: "#EBF4FF" , backgroundBlendMode: "multiply"}}
             className=" bg-cover bg-center md:h-[669px] md:w-auto w-full"
          >
             <div className="max-w-[1400px] mx-auto px-5 pt-[9rem] md:pt-[4rem]">

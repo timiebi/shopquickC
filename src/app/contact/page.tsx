@@ -23,10 +23,25 @@ const constact = [
    },
 ];
 
+const founder = [
+   {
+      name: "1900 - 6666",
+       icon: "/assets/contactIcon/mail.svg",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/x.svg",
+   },
+   {
+      name: "@shopquick_uk",
+      icon: "/assets/contactIcon/linkedin.svg",
+   }
+]
+
 export default function ContactPage() {
    return (
-      <main className="relative ">
-         <div className="bg-[url('/assets/herobg.png')] bg-cover bg-center h-[391px] md:h-[409px] md:w-auto w-full relative">
+      <main className="relative mb-35">
+         <div className="bg-[url('/assets/herobg2.png')] bg-cover bg-center h-[391px] md:h-[409px] md:w-auto w-full relative">
             <div className="max-w-[1400px] m-auto pt-[5rem] md:pt-[4rem]">
                <div className="flex md:flex-row flex-col items-center justify-center gap-[2rem]">
                   <div>
@@ -44,7 +59,7 @@ export default function ContactPage() {
             </div>
          </div>
          <section className="mt-30 flex flex-col md:flex-row items-center justify-center gap-[4rem] md:gap-9 mb-[5rem] md:mb-6">
-            <div className="max-w-[350px] md:max-w-[500px] w-full rounded-[18px] border-[#525252] border-3 md:border-5 max-h-[646px] md:max-h-[581px] py-[1rem] px-[20px] md:px-[50px]  top-[22rem] md:top-[23rem] md:left-50 bg-white left-1/2  md:translate-x-0">
+            <div className="max-w-[350px] md:max-w-[500px] w-full rounded-[18px] border-[#525252] border-3 md:border-5 max-h-[646px] md:max-h-[600px] py-[1rem] px-[20px] md:px-[50px]  top-[22rem] md:top-[23rem] md:left-50 bg-white left-1/2  md:translate-x-0">
                <main className="md:max-w-[1173px] w-full mt-2">
                   <header className="hidden md:block">
                      <h1 className="text-[#525252] font-[800] text-[2rem]">Email Us</h1>
@@ -86,12 +101,23 @@ export default function ContactPage() {
             </div>
             <div>
                <div>
-                  <h1 className="text-center mb-4 font-[800] text-[1.875rem]">Follow Us</h1>
+                  <h1 className="text-center mb-4 font-[800] text-[1.8rem] text-[#525252]">Follow Us</h1>
                   <div className="flex items-center flex-wrap max-w-[500px] gap-6 justify-center">
-                     {constact.map((list) => (
-                        <div className="flex items-center flex-col gap-2 cursor-pointer">
-                           <img src={list.icon} alt="" />
-                           <p className="text-[17.78px] text-center">{list.name}</p>
+                     {constact.map((list, index) => (
+                        <div key={index} className="flex items-center flex-col gap-2 cursor-pointer">
+                           <img src={list.icon} alt="" className="max-w-[28px]"/>
+                           <p className="text-[1rem] text-center">{list.name}</p>
+                        </div>
+                     ))}
+                  </div>
+               </div>
+               <div className="mt-20">
+                  <h1 className="text-center mb-4 font-[800] text-[1.8rem] text-[#525252]">Contact Founder</h1>
+                  <div className="flex items-center flex-wrap max-w-[500px] gap-6 justify-center">
+                     {founder.map((list, index) => (
+                        <div key={index} className="flex items-center flex-col gap-2 cursor-pointer">
+                           <img src={list.icon} alt="" className="max-w-[28px]"/>
+                           <p className="text-[1rem] text-center">{list.name}</p>
                         </div>
                      ))}
                   </div>
