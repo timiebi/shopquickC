@@ -86,11 +86,11 @@ const socials = [
 
 export function Footer() {
    return (
-      <footer className="bg-[#F7F8FD] w-full">
-         <div className="max-w-[1200px] w-full mx-5 md:mx-auto pt-20">
+      <footer className="bg-[#F7F8FD] w-full px-5 md:px-0">
+         <div className="max-w-[1200px] w-full  md:mx-auto pt-10 md:pt-20">
             <div className="flex  flex-col md:flex-row items-start w-full justify-between">
-               <img src="/assets/shopQuiclogo.png" alt="" className="max-w-[243px]" />
-               <div className="flex items-start flex-col md:flex-row w-full justify-between max-w-[764.0579223632812px]">
+               <img src="/assets/shopQuiclogo.png" alt="" className="max-w-[150px]  md:max-w-[243px]" />
+               <div className="flex items-start flex-col md:flex-row w-full justify-between max-w-[764.0579223632812px] mt-8 md:mt-0">
                   {list.map((list, index) => (
                      <ul key={index} className="mb-8 md:mb-0">
                         <h1 className="text-[#08569C] font-[700] text-[1.1rem] mb-1 uppercase">
@@ -112,7 +112,7 @@ export function Footer() {
                   ))}
                </div>
             </div>
-            <div className="w-full border-1 borer-[#999999] mt-20"></div>
+            <div className="w-full border-1 borer-[#999999]  md:mt-20"></div>
             <div className="flex items-center flex-wrap md:flex-nowrap gap-5 md:gap-10 py-5">
                {socials.map((socials, index) => (
                   <div key={index} className="flex items-center flex-col">

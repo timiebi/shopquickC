@@ -1,11 +1,11 @@
 import { LinkedinSvg } from "@/app/assets/svg";
 
 const data = [
-   {
-      name: "Charles Ajayi",
-      role: "Chief Operations",
-      img: "/assets/charles.png",
-   },
+   // {
+   //    name: "Charles Ajayi",
+   //    role: "Chief Operations",
+   //    img: "/assets/charles.png",
+   // },
    //  {
    //     name: "Soyemi Akinwande",
    //     role: "Chief Operations",
@@ -16,15 +16,25 @@ const data = [
       role: "Product Designer",
       img: "/assets/productDesigner.svg",
    },
-   {
-      name: "Ibukun Odujoko",
-      role: "Head Sales",
-      img: "/assets/ibukun.png",
+    {
+      name: "Stuart Prestedge",
+      role: "Start-up Advisor",
+      img: "/assets/prestige.png",
    },
-   {
-      name: "Niyi Olufemi",
-      role: "Head of Admin",
-      img: "/assets/niyi.png",
+   // {
+   //    name: "Ibukun Odujoko",
+   //    role: "Head Sales",
+   //    img: "/assets/ibukun.png",
+   // },
+   // {
+   //    name: "Niyi Olufemi",
+   //    role: "Head of Admin",
+   //    img: "/assets/niyi.png",
+   // },
+    {
+      name: "Tomi Ogundipe",
+      role: "AI Advisor",
+      img: "/assets/tomi.png",
    },
 ];
 
@@ -60,7 +70,7 @@ export function AboutMeetTheTeam() {
                </div>
             </div>
             <section className="md:overflow-hidden  no-scrollbar  overflow-x-auto snap-x snap-mandatory scroll-smooth px-5 mt-[6rem] md:max-w-full max-w-[400px] mx-auto mb-[3rem]">
-               <div className="flex gap-6 w-max">
+               <div className="flex items-center justify-between gap-4 w-full">
                   {data.map((list) => (
                      <div
                         key={list.name}

@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Roboto } from "next/font/google";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
 const roboto = Roboto({
@@ -16,6 +16,7 @@ const roboto = Roboto({
 export function HeaderComponent() {
    const pathname = usePathname();
    const [isOpen, setIsOpen] = useState(false);
+   const router =useRouter()
 
    const navLinks = [
       { name: "About Us", href: "/about" },
@@ -73,7 +74,12 @@ export function HeaderComponent() {
                   className="fixed top-0 left-0 w-full h-[401px] bg-white z-50 flex flex-col px-6 pt-6"
                >
                   <div className="flex justify-between items-center mb-8">
-                     <LogoSvg />
+                     <div onClick={() => {
+                        router.push("/")
+                        setIsOpen(false)
+                        }} className="cursor-pointer">
+                        <LogoSvg />
+                     </div>
                      <button onClick={() => setIsOpen(false)}>
                         <X size={32} className="text-[#08569C]" />
                      </button>

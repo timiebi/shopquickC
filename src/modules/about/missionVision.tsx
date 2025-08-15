@@ -18,7 +18,7 @@ export function VisionMission() {
                      OUR VISION
                   </h1>
                   <p className="text-[14px] md:text-[1.4rem] font-[400] text-[#525252] text-center">
-                     "To empower consumers with smart, data-driven grocery shopping, ensuring they
+                     To empower consumers with smart, data-driven grocery shopping, ensuring they
                      never overpay, never miss a deal, and always shop efficiently saving time,
                      money, and reducing food waste."
                   </p>
