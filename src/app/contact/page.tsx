@@ -26,7 +26,7 @@ const constact = [
 const founder = [
    {
       name: "1900 - 6666",
-       icon: "/assets/contactIcon/mail.svg",
+      icon: "/assets/contactIcon/mail.svg",
    },
    {
       name: "@shopquick_uk",
@@ -35,8 +35,8 @@ const founder = [
    {
       name: "@shopquick_uk",
       icon: "/assets/contactIcon/linkedin.svg",
-   }
-]
+   },
+];
 
 export default function ContactPage() {
    return (
@@ -49,10 +49,9 @@ export default function ContactPage() {
                         We'd love to hear from you
                      </h1>
                      <p className="text-[13.79px] md:text-[1.5rem] font-[400] text-[#525252] max-w-[348px] m-auto md:max-w-[1000px] mb-[2rem] text-center">
-                        Have questions about how ShopQuick works, our pricing, policies, or the
-                        benefits of using our app? Our dedicated team is here to help. Whether you
-                        need assistance with price comparisons, store navigation, scanning, or
-                        making direct payments to skip queues — we're happy to support you
+                        We’d love to hear from you, whether you’re a shopper, store owner, or
+                        investor.” Have questions about how ShopQuick works, our pricing, policies,
+                        or the benefits of using our app? Our dedicated team is here to help.
                      </p>
                   </div>
                </div>
@@ -101,22 +100,32 @@ export default function ContactPage() {
             </div>
             <div>
                <div>
-                  <h1 className="text-center mb-4 font-[800] text-[1.8rem] text-[#525252]">Follow Us</h1>
+                  <h1 className="text-center mb-4 font-[800] text-[1.8rem] text-[#525252]">
+                     Follow Us
+                  </h1>
                   <div className="flex items-center flex-wrap max-w-[500px] gap-6 justify-center">
                      {constact.map((list, index) => (
-                        <div key={index} className="flex items-center flex-col gap-2 cursor-pointer">
-                           <img src={list.icon} alt="" className="max-w-[28px]"/>
+                        <div
+                           key={index}
+                           className="flex items-center flex-col gap-2 cursor-pointer"
+                        >
+                           <img src={list.icon} alt="" className="max-w-[28px]" />
                            <p className="text-[1rem] text-center">{list.name}</p>
                         </div>
                      ))}
                   </div>
                </div>
                <div className="mt-20">
-                  <h1 className="text-center mb-4 font-[800] text-[1.8rem] text-[#525252]">Contact Founder</h1>
+                  <h1 className="text-center mb-4 font-[800] text-[1.8rem] text-[#525252]">
+                     Contact Founder
+                  </h1>
                   <div className="flex items-center flex-wrap max-w-[500px] gap-6 justify-center">
                      {founder.map((list, index) => (
-                        <div key={index} className="flex items-center flex-col gap-2 cursor-pointer">
-                           <img src={list.icon} alt="" className="max-w-[28px]"/>
+                        <div
+                           key={index}
+                           className="flex items-center flex-col gap-2 cursor-pointer"
+                        >
+                           <img src={list.icon} alt="" className="max-w-[28px]" />
                            <p className="text-[1rem] text-center">{list.name}</p>
                         </div>
                      ))}

@@ -87,7 +87,7 @@ const socials = [
 export function Footer() {
    return (
       <footer className="bg-[#F7F8FD] w-full px-5 md:px-0">
-         <div className="max-w-[1200px] w-full  md:mx-auto pt-10 md:pt-20">
+         <div className="max-w-[1300px] w-full  md:mx-auto pt-10 md:pt-20">
             <div className="flex  flex-col md:flex-row items-start w-full justify-between">
                <img src="/assets/shopQuiclogo.png" alt="" className="max-w-[150px]  md:max-w-[243px]" />
                <div className="flex items-start flex-col md:flex-row w-full justify-between max-w-[764.0579223632812px] mt-8 md:mt-0">

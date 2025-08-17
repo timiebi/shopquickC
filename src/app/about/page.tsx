@@ -25,9 +25,10 @@ export default function About() {
                   </div>
                </div>
             </div>
+
             <div className="max-w-[1200px] justify-center m-auto pt-[4rem] hidden md:flex">
                <div className="absolute top-[18rem] px-5 max-w-[1200px] m-auto">
-                  <div className="flex items-center justify-between">
+                  {/* <div className="flex items-center justify-between">
                      <div className="max-w-[290px] relative top-9">
                         <img src="/assets/fruit.png" alt="join us" className="w-full" />
                      </div>
@@ -37,7 +38,10 @@ export default function About() {
                      <div className="max-w-[178px]  relative top-2">
                         <img src="/assets/joinus.png" alt="join us" className="w-full" />
                      </div>
-                  </div>
+                  </div> */}
+                  <h2 className="text-[1.5rem] font-[700] text-[#3B3B3B] text-center m-auto mb-3">
+                     KNOW US MORE
+                  </h2>
                   <div className="border-4 border-[#525252] rounded-[18px] py-[1.2rem] px-[2rem] bg-white">
                      <div className="">
                         <h1 className="font-[800] text-[3rem] text-center text-[#08569C] m-auto">
@@ -110,7 +114,7 @@ export default function About() {
                            About Shopquick
                         </h1>
                         <p className="text-[1rem]  md:text-[20px] font-[500] ">
-                          Grocery shopping is something we all do, but for many of us, it’s become
+                           Grocery shopping is something we all do, but for many of us, it’s become
                            stressful, time-consuming, and expensive. Long queues. Missed discounts.
                            Too many apps and the constant pressure to stretch every pound.
                            <br />
