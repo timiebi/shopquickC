@@ -66,7 +66,7 @@ const socials = [
    },
    {
       name: "@shopquick_uk",
-      icon: "/assets/contactIcon/x.svg",
+      icon: "/assets/contactIcon/twitter.svg",
       link: "https://x.com/shopquickapp?s=11&t=IoFjrBfAVZuN8lobIYnE-w",
    },
    {

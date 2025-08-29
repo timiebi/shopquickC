@@ -7,7 +7,7 @@ const constact = [
    },
    {
       name: "@shopquick_uk",
-      icon: "/assets/contactIcon/x.svg",
+      icon: "/assets/contactIcon/twitter.svg",
    },
    {
       name: "@shopquick_uk",
@@ -30,7 +30,7 @@ const founder = [
    },
    {
       name: "@shopquick_uk",
-      icon: "/assets/contactIcon/x.svg",
+      icon: "/assets/contactIcon/twitter.svg",
    },
    {
       name: "@shopquick_uk",
