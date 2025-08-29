@@ -1,10 +1,10 @@
 // import { FaqPage } from "@/modules/faq";
 
 const constact = [
-   {
-      name: "1900 - 6666",
-      icon: "/assets/contactIcon/phone.svg",
-   },
+   // {
+   //    name: "1900 - 6666",
+   //    icon: "/assets/contactIcon/phone.svg",
+   // },
    {
       name: "@shopquick_uk",
       icon: "/assets/contactIcon/twitter.svg",
