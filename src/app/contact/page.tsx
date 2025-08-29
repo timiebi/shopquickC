@@ -24,10 +24,10 @@ const constact = [
 ];
 
 const founder = [
-   {
-      name: "1900 - 6666",
-      icon: "/assets/contactIcon/mail.svg",
-   },
+   // {
+   //    name: "1900 - 6666",
+   //    icon: "/assets/contactIcon/mail.svg",
+   // },
    {
       name: "@shopquick_uk",
       icon: "/assets/contactIcon/twitter.svg",
